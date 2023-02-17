@@ -1,3 +1,11 @@
+
+# Datos
+
+src/component ----> componentes 
+src/App.js  ----> se tomo como principal
+
+
+# Documentación de reactjs 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
