@@ -3,9 +3,7 @@ import { useState } from "react";
 
 const dataLocationGeneral =
 {
-    positions: [],
-    latitud: null,
-    longitud: null
+    positions: []
 }
 
 const SectionLocation = () => {
@@ -35,10 +33,11 @@ const SectionLocation = () => {
     return (
         <div>
             {
-                (dataLocation.positions.length) &&
-                     dataLocation.positions.map(element => {
+                dataLocation.positions.length ?
+                    (dataLocation.positions.map(element => {
                         return (<p>{`Latitud: ${element.latitud} --- Longitud ${element.longitud}`}</p>)
-                    })
+                    })) : 
+                    ''
             }
             <button onClick={onClickAction}>LOCATION NOW</button>
         </div>
